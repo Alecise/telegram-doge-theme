@@ -19,6 +19,7 @@
 COLOR_ONYX: #313638;
 COLOR_SNOW: #fbfbfb;
 COLOR_PLATINUM: #e8e9eb;
+COLOR_GAINSBORO: #e0dfd5;
 
 windowBg: COLOR_ONYX;									// Window backgrounds
 windowFg: COLOR_SNOW;									// Main text / chat text
@@ -32,7 +33,7 @@ windowBoldFg: COLOR_PLATINUM;								// Chats list chat name text
 windowBoldFgOver: COLOR_ONYX;							// Mouse over chats list chat name text
 windowBgActive: COLOR_PLATINUM;							// Active button background
 windowFgActive: COLOR_ONYX;							// Active selected chats list text / button text
-windowActiveTextFg: COLOR_SNOW;						// Online status, links, recording cancel, etc
+windowActiveTextFg: #9ea8a8;						// Online status, links, recording cancel, etc
 windowShadowFg: #B3B3B3;							// Window border shadows
 windowShadowFgFallback: COLOR_SNOW;					// Notification border
 shadowFg: #FFFFFF18;								// Internal border shadows
@@ -47,12 +48,12 @@ activeButtonFg: windowFgActive;						// Currently selected button text
 activeButtonFgOver: activeButtonFg;					// Mouse over currently selected button text
 activeButtonSecondaryFg: COLOR_SNOW;
 activeButtonSecondaryFgOver: COLOR_ONYX;
-activeLineFg: COLOR_SNOW;
+activeLineFg: COLOR_ONYX;
 activeLineFgError: #e48383;
 lightButtonBg: windowBg;							// Default button background
 lightButtonBgOver: #45525C;							// Mouse over button background
 lightButtonBgRipple: #5F6C76;						// Mouse click button background
-lightButtonFg: windowActiveTextFg;
+lightButtonFg: COLOR_GAINSBORO;
 lightButtonFgOver: lightButtonFg;
 attentionButtonFg: #d14e4e;
 attentionButtonFgOver: #d14e4e;
@@ -122,7 +123,7 @@ contactsBgOver: nullWindowBgOver;					// Contacts list mouse over background
 contactsNameFg: boxTextFg;
 contactsStatusFg: windowSubTextFg;					// Contacts list last seen
 contactsStatusFgOver: windowSubTextFgOver;
-contactsStatusFgOnline: windowActiveTextFg;
+contactsStatusFgOnline: COLOR_GAINSBORO;
 photoCropFadeBg: layerBg;
 photoCropPointFg: #ffffff7f;
 introBg: windowBg;
@@ -143,21 +144,21 @@ dialogsNameFg: windowBoldFg;
 dialogsChatIconFg: dialogsNameFg;
 dialogsDateFg: windowSubTextFg;						// Chats list date text
 dialogsTextFg: windowSubTextFg;						// Chats list message preview text
-dialogsTextFgService: windowActiveTextFg;			// Chats list message preview sender name
+dialogsTextFgService: COLOR_GAINSBORO;			// Chats list message preview sender name
 dialogsDraftFg: COLOR_SNOW;							// Chats list message preview for drafts
 dialogsVerifiedIconBg: windowBgActive;
 dialogsVerifiedIconFg: windowFgActive;
 dialogsSendingIconFg: #c1c1c1;
 dialogsSentIconFg: COLOR_SNOW;							// Chats list sent icon
 dialogsUnreadBg: COLOR_PLATINUM;					// Chats list unread counter background
-dialogsUnreadBgMuted: #6C7983;						// Chats list muted unread counter background
-dialogsUnreadFg: COLOR_SNOW;							// Chats list unread counter text
+dialogsUnreadBgMuted: COLOR_ONYX;					// Chats list muted unread counter background
+dialogsUnreadFg: #6C7983;							// Chats list unread counter text
 dialogsBgOver: COLOR_PLATINUM;					// Chats list mouse over background
 dialogsNameFgOver: windowBoldFgOver;
 dialogsChatIconFgOver: dialogsNameFgOver;
 dialogsDateFgOver: windowSubTextFgOver;
 dialogsTextFgOver: windowSubTextFgOver;
-dialogsTextFgServiceOver: COLOR_SNOW;					// Mouse over chats list message preview sender name
+dialogsTextFgServiceOver: COLOR_ONYX;					// Mouse over chats list message preview sender name
 dialogsDraftFgOver: dialogsDraftFg;
 dialogsVerifiedIconBgOver: dialogsVerifiedIconBg;
 dialogsVerifiedIconFgOver: dialogsVerifiedIconFg;
@@ -173,7 +174,7 @@ dialogsChatIconFgActive: dialogsNameFgActive;
 dialogsDateFgActive: windowFgActive;
 dialogsTextFgActive: windowFgActive;
 dialogsTextFgServiceActive: dialogsTextFgActive;
-dialogsDraftFgActive: #c6e1f7;
+dialogsDraftFgActive: COLOR_ONYX;
 dialogsVerifiedIconBgActive: dialogsTextFgActive;
 dialogsVerifiedIconFgActive: dialogsBgActive;
 dialogsSendingIconFgActive: #ffffff99;
@@ -195,12 +196,12 @@ stickerPanDeleteBg: #000000cc;
 stickerPanDeleteFg: windowFgActive;
 stickerPreviewBg: #1F2C36b0;						// Sticker preview background
 historyTextInFg: COLOR_ONYX;
-historyTextOutFg: COLOR_SNOW;
+historyTextOutFg: COLOR_ONYX;
 historyCaptionInFg: historyTextInFg;
 historyCaptionOutFg: historyTextOutFg;
 historyFileNameInFg: historyTextInFg;
 historyFileNameOutFg: historyTextOutFg;
-historyOutIconFg: COLOR_PLATINUM;
+historyOutIconFg: COLOR_ONYX;
 historyOutIconFgSelected: COLOR_SNOW;
 historyIconFgInverted: windowFgActive;
 historySendingOutIconFg: #9dc2d9;
@@ -214,21 +215,21 @@ historyUnreadBarBorder: shadowFg;
 historyUnreadBarFg: COLOR_SNOW;
 historyForwardChooseBg: #0000004c;
 historyForwardChooseFg: windowFgActive;
-historyPeer1NameFg: COLOR_SNOW;						// Group chat sender name
+historyPeer1NameFg: COLOR_ONYX;						// Group chat sender name
 historyPeer1UserpicBg: COLOR_SNOW;
-historyPeer2NameFg: COLOR_SNOW;
+historyPeer2NameFg: COLOR_ONYX;
 historyPeer2UserpicBg: COLOR_SNOW;
-historyPeer3NameFg: COLOR_SNOW;
+historyPeer3NameFg: COLOR_ONYX;
 historyPeer3UserpicBg: COLOR_SNOW;
-historyPeer4NameFg: e4b363;
+historyPeer4NameFg: COLOR_ONYX;
 historyPeer4UserpicBg: COLOR_SNOW;
-historyPeer5NameFg: COLOR_SNOW;
+historyPeer5NameFg: COLOR_ONYX;
 historyPeer5UserpicBg: COLOR_SNOW;
-historyPeer6NameFg: COLOR_SNOW;
+historyPeer6NameFg: COLOR_ONYX;
 historyPeer6UserpicBg: COLOR_SNOW;
-historyPeer7NameFg: COLOR_SNOW;
+historyPeer7NameFg: COLOR_ONYX;
 historyPeer7UserpicBg: COLOR_SNOW;
-historyPeer8NameFg: COLOR_SNOW;
+historyPeer8NameFg: COLOR_ONYX;
 historyPeer8UserpicBg: COLOR_SNOW;
 historyPeerUserpicFg: windowFgActive;
 historyScrollBarBg: #267db27a;
@@ -236,15 +237,15 @@ historyScrollBarBgOver: #267db2bc;
 historyScrollBg: #267db24c;
 historyScrollBgOver: #267db26b;
 msgInBg: COLOR_PLATINUM;									// Incoming message background
-msgInBgSelected: COLOR_PLATINUM;							// Selected incoming message background
-msgOutBg: COLOR_ONYX;									// Outgoing message background
-msgOutBgSelected: COLOR_PLATINUM;							// Selected outgoing message background
+msgInBgSelected: COLOR_GAINSBORO;							// Selected incoming message background
+msgOutBg: COLOR_SNOW;									// Outgoing message background
+msgOutBgSelected: COLOR_GAINSBORO;							// Selected outgoing message background
 msgSelectOverlay: #358cd44c;
 msgStickerOverlay: #358cd47f;						// Selected sticker overlay
-msgInServiceFg: windowActiveTextFg;					// Incoming reply quoted name
-msgInServiceFgSelected: windowActiveTextFg;			// Selected incoming reply quoted name
-msgOutServiceFg: COLOR_PLATINUM;				// Outgoing reply quoted name
-msgOutServiceFgSelected: windowActiveTextFg;		// Selected outgoing reply quoted name
+msgInServiceFg: COLOR_ONYX;					// Incoming reply quoted name
+msgInServiceFgSelected: COLOR_SNOW;			// Selected incoming reply quoted name
+msgOutServiceFg: COLOR_ONYX;				// Outgoing reply quoted name
+msgOutServiceFgSelected: COLOR_SNOW;		// Selected outgoing reply quoted name
 msgInShadow: #144D7B29;								// Incoming message box shadow
 msgInShadowSelected: #548dbb29;						// Selected incoming message box shadow
 msgOutShadow: #144D7B29;							// Outgoing message box shadow
@@ -272,10 +273,10 @@ msgFileThumbLinkInFgSelected: lightButtonFgOver;
 msgFileThumbLinkOutFg: lightButtonFg;
 msgFileThumbLinkOutFgSelected: lightButtonFgOver;
 msgFileInBg: COLOR_ONYX;
-msgFileInBgOver: COLOR_SNOW;
-msgFileInBgSelected: COLOR_SNOW;
-msgFileOutBg: COLOR_PLATINUM;
-msgFileOutBgOver: COLOR_SNOW;
+msgFileInBgOver: #000000;
+msgFileInBgSelected: COLOR_ONYX;
+msgFileOutBg: COLOR_ONYX;
+msgFileOutBgOver: #000000;
 msgFileOutBgSelected: COLOR_ONYX;
 msgFile1Bg: #72b1df;
 msgFile1BgDark: #5c9ece;
@@ -293,14 +294,14 @@ msgFile4Bg: #efc274;
 msgFile4BgDark: #e6a561;
 msgFile4BgOver: #dc9c5a;
 msgFile4BgSelected: #b19d84;
-msgWaveformInActive: COLOR_SNOW;
+msgWaveformInActive: COLOR_ONYX;
 msgWaveformInActiveSelected: COLOR_SNOW;
-msgWaveformInInactive: COLOR_ONYX;
-msgWaveformInInactiveSelected: COLOR_ONYX;
-msgWaveformOutActive: COLOR_SNOW;
+msgWaveformInInactive: COLOR_SNOW;
+msgWaveformInInactiveSelected: COLOR_PLATINUM;
+msgWaveformOutActive: COLOR_ONYX;
 msgWaveformOutActiveSelected: COLOR_SNOW;
 msgWaveformOutInactive: COLOR_PLATINUM;
-msgWaveformOutInactiveSelected: COLOR_ONYX;
+msgWaveformOutInactiveSelected: COLOR_PLATINUM;
 msgBotKbOverBgAdd: #ffffff20;
 msgBotKbIconFg: msgServiceFg;
 msgBotKbRippleBg: #00000020;
@@ -324,7 +325,7 @@ historyComposeIconFg: menuIconFg;
 historyComposeIconFgOver: menuIconFgOver;
 historySendIconFg: windowBgActive;
 historySendIconFgOver: windowBgActive;
-historyPinnedBg: historyComposeAreaBg;
+historyPinnedBg: COLOR_PLATINUM;
 historyReplyBg: historyComposeAreaBg;
 historyReplyCancelFg: cancelIconFg;
 historyReplyCancelFgOver: cancelIconFgOver;
